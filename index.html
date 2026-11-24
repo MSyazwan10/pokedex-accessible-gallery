@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poké-Dex Elemental Gallery</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="initializeGallery()">
+
+    <!-- Header Section -->
+    <header>
+        <h1 class="gallery-title">Poké-Dex Elemental Database</h1>
+        <p class="gallery-subtitle">Hover or press TAB over a Pokémon below to analyze combat data</p>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Main Display Frame (Target of DOM manipulation) -->
+        <div id="image">
+            Hover or TAB over a Pokémon below to display data.
+        </div>
+
+        <!-- Thumbnail Gallery Grid -->
+        <section class="preview-strip" aria-label="Pokémon Selectors">
+            <img class="preview"
+                alt="Pikachu — Electric Type | Mouse Pokémon floating peacefully on its back in crystal clear, shimmering blue water"
+                src="images/pikachu2.jpg" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)"
+                onblur="undo()">
+
+            <img class="preview"
+                alt="Eevee — Normal Type | Evolution Pokémon with fluffy brown fur, a large bushy tail, and a cream-colored ruff"
+                src="images/eevee2.jpg" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)"
+                onblur="undo()">
+
+            <img class="preview"
+                alt="Charizard — Fire / Flying Type | Flame Pokémon sleeping curled up peacefully in a sunny green field surrounded by trees and small fires"
+                src="images/charizard2.jpg" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)"
+                onblur="undo()">
+
+            <img class="preview"
+                alt="Blastoise — Water Type | Shellfish Pokémon gliding gracefully deep underwater with bubbles streaming"
+                src="images/blastoise2.jpg" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)"
+                onblur="undo()">
+
+            <img class="preview"
+                alt="Venusaur — Grass / Poison Type | Seed Pokémon resting peacefully in a lush garden next to a cottage"
+                src="images/venusaur2.jpg" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)"
+                onblur="undo()">
+
+            <img class="preview"
+                alt="Gengar — Ghost / Poison Type | Shadow Pokémon with a mischievous wide grin lurking near a spooky mansion"
+                src="images/gengar2.jpg" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)"
+                onblur="undo()">
+        </section>
+    </main>
+
+    <footer>
+        <p>Interactive JavaScript Project &bull; Poké-Dex Edition</p>
+    </footer>
+
+    <!-- External JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
